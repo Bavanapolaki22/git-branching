@@ -168,3 +168,93 @@ Interactive rebase gives full control over commit history.
 git rebase -i HEAD~4
 ```
 
+
+
+
+
+
+## Level 11: Grabbing Just 1 Commit
+This level focuses on extracting **only one required commit** from a branch using cherry-pick or rebase.
+
+<img width="1919" height="946" alt="7" src="https://github.com/user-attachments/assets/f9954ae3-878b-41db-a74c-1792eea6fd8c" />
+
+
+### Commands Used
+
+```bash
+git checkout main
+git cherry-pick bugFix
+```
+
+---
+
+## Level 12: Juggling Commits
+This level teaches how to **edit commit content** and **reorder commits** using interactive rebase and amend.
+
+<img width="1916" height="949" alt="8" src="https://github.com/user-attachments/assets/df15c339-9693-4b8d-bb4d-6826656471fa" />
+
+
+
+### Commands Used
+
+```bash
+git rebase -i HEAD~2
+git commit --amend
+git rebase -i HEAD~2
+git checkout main
+git merge caption
+```
+
+---
+
+## Level 13: Juggling Commits #2
+This level extends commit juggling by **rebasing a feature branch onto main** and fast-forwarding the main branch.
+
+<img width="1917" height="945" alt="9" src="https://github.com/user-attachments/assets/3ad45be1-db42-440c-84f1-3a2ace1218d9" />
+
+
+### Commands Used
+
+```bash
+git rebase -i HEAD~2
+git commit --amend
+git rebase -i HEAD~2
+git checkout main
+git rebase caption
+```
+
+---
+
+## Level 14: Git Tags
+This level introduces **Git tags**, which are used to mark specific commits (commonly for releases).
+
+<img width="1919" height="968" alt="10" src="https://github.com/user-attachments/assets/e950944d-2b66-42f6-b30b-282ccfb4615c" />
+
+### Commands Used
+
+```bash
+git tag v0 C1
+git checkout C1
+git commit
+git checkout C2
+git tag v1
+```
+
+---
+
+##  Level 15: Git Describe
+This level demonstrates how Git identifies commits using the **nearest tag**, commit count, and hash.
+
+<img width="1919" height="952" alt="11" src="https://github.com/user-attachments/assets/196cf07f-6d66-43df-b912-3aad6a7baa34" />
+
+
+###  Commands Used
+
+```bash
+git checkout bugFix
+git rebase side
+```
+
+---
+
+
